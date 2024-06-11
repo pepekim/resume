@@ -7,52 +7,64 @@ body {
     font-size:14px;     /* 글자 크기 */
 }
 
+header {
+    text-align: center;
+}
+
 h1 {
-    font-size: 3rem;    /* 글자 크기 */
-    letter-spacing: 0.6rem;  /* 자간 */
-    padding-top: 1rem;   /* 위쪽 패딩 */
-    padding-bottom: 1rem;   /*  아래쪽 패딩 */
+    font-size: 4rem;
+    text-align: start;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 1.5rem;
-    padding-bottom: 1em;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
-main {
-    display: grid;    /* css grid 사용 */
-    grid-template-columns: 40% 60%; /* 왼쪽 40%, 오른쪽 60% */
-    margin-top: 3rem;
+h3 {
+    font-size: 2rem;
 }
 
-#mainLeft {
-    border-right: 1px solid lightgray;
+h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
-header {
-    text-align: center;
-    margin: auto 2rem;
-}
-
-section {
-    margin: auto 1rem 4rem 2rem;
+span {
+    font-size: 0.9rem;
 }
 
 p {
-    margin: 0.2rem auto;
+    font-size: 1.1rem;
 }
 
-hr {
-    border: none;
-    background-color: lightgray;
-    height: 1px;
+main {
+
 }
 
-h1, h2 {
-    font-weight: 100; 
-    margin-bottom: 0;
+article {
+    border-bottom: 1px solid #ddd;
 }
 
-i {
-    margin-right: 0.5rem;    /* SNS 아이콘 오른쪽 여백 */
+
+section {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px dashed #eee;
+}
+
+#row_left {
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    margin:0;
+
+    flex:4
+}
+
+#row_right {
+    display: flex;
+    flex-direction: column;
+    flex:6
 }
