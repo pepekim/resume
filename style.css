@@ -47,6 +47,10 @@ article {
     border-bottom: 1px solid #ddd;
 }
 
+container {
+    display: flex;
+    flex-direction: column;
+}
 
 section {
     display: flex;
