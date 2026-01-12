@@ -1,74 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 
 body {
-    max-width: 960px;    /* 최대 너비 */
-    margin: auto;         /* 마진 auto - 내용을 화면 가운데 맞추기 위해  */
-    font-family: "Noto Sans KR", "Nanum Gothic";        /* 글꼴 - 웹 폰트 */
-    font-size:14px;     /* 글자 크기 */
+  max-width: 960px; /* 최대 너비 */
+  margin: auto; /* 마진 auto - 내용을 화면 가운데 맞추기 위해  */
+  font-family: "Noto Sans KR", "Nanum Gothic"; /* 글꼴 - 웹 폰트 */
+  font-size: 14px; /* 글자 크기 */
 }
 
 header {
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+#profile_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  object-fit: cover;
 }
 
 h1 {
-    font-size: 4rem;
-    text-align: start;
-    font-weight: bold;
+  font-size: 4rem;
+  text-align: start;
+  font-weight: bold;
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: bold;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h4 {
-    font-size: 1.3rem;
-    font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 span {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 p {
-    font-size: 1.1rem;
-}
-
-main {
-
+  font-size: 1.1rem;
 }
 
 article {
-    border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1px dashed #eee;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px dashed #eee;
 }
 
 #row_left {
-    display: flex;
-    flex-direction: column;
-    padding:0;
-    margin:0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
 
-    flex:4
+  flex: 4;
 }
 
 #row_right {
-    display: flex;
-    flex-direction: column;
-    flex:6
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+}
+
+#skill_section {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#skill_category {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 10px;
 }
